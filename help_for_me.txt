@@ -1,0 +1,3 @@
+
+запуск файла
+node src/brain-games.js
