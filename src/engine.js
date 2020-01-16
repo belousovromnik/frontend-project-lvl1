@@ -7,6 +7,10 @@ export const getRandomInt = () => {
   return Math.floor((Math.random() * MAXIMAL_RANDOM) + MINIMAL_RANDOM);
 };
 
+export const add = (a, b) => a + b;
+export const sub = (a, b) => a - b;
+export const mul = (a, b) => a * b;
+
 export default function run(greeting, mainAction) {
   const QUESTION_NUMBER = 3;
 
