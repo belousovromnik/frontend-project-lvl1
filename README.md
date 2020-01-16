@@ -8,3 +8,4 @@ Frontend PROJECT
 [![asciicast](https://asciinema.org/a/Ywt0i2vExQSO4RElRKrkNN6WS.svg)](https://asciinema.org/a/Ywt0i2vExQSO4RElRKrkNN6WS)
 Игра: "Калькулятор"
 [![asciicast](https://asciinema.org/a/JiABNBbHAnWv0eZfWTYHrkvaJ.svg)](https://asciinema.org/a/JiABNBbHAnWv0eZfWTYHrkvaJ)
+Игра "НОД"

@@ -7,6 +7,15 @@ export const getRandomInt = () => {
   return Math.floor((Math.random() * MAXIMAL_RANDOM) + MINIMAL_RANDOM);
 };
 
+export const euclideanAlgorithm = (a, b) => {
+  // остаток от деления
+  const remainderOfDivision = a % b;
+  if (remainderOfDivision === 0) {
+    return b;
+  }
+  return euclideanAlgorithm(b, remainderOfDivision);
+};
+
 export const add = (a, b) => a + b;
 export const sub = (a, b) => a - b;
 export const mul = (a, b) => a * b;
