@@ -6,3 +6,5 @@ Frontend PROJECT
 [![asciicast](https://asciinema.org/a/XUwV2YpBlGzKgT51R6JpqrpSg.svg)](https://asciinema.org/a/XUwV2YpBlGzKgT51R6JpqrpSg)
 Игра: "Проверка на чётность"
 [![asciicast](https://asciinema.org/a/Ywt0i2vExQSO4RElRKrkNN6WS.svg)](https://asciinema.org/a/Ywt0i2vExQSO4RElRKrkNN6WS)
+Игра: "Калькулятор"
+[![asciicast](https://asciinema.org/a/JiABNBbHAnWv0eZfWTYHrkvaJ.svg)](https://asciinema.org/a/JiABNBbHAnWv0eZfWTYHrkvaJ)
