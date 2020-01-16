@@ -1,3 +1,11 @@
 
 запуск файла
 node src/brain-games.js
+
+
+
+установка пакета
+npm link
+
+удаление пакета 
+sudo npm uninstall belousovromnik-frontend-project-lvl1
