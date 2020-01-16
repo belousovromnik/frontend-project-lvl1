@@ -1,10 +1,9 @@
 import readlineSync from 'readline-sync';
 
-export const getRandomInt = () => {
-  const MINIMAL_RANDOM = 1;
-  const MAXIMAL_RANDOM = 100;
-
-  return Math.floor((Math.random() * MAXIMAL_RANDOM) + MINIMAL_RANDOM);
+export const getRandomInt = (minRandom = 1, maxRandom = 100) => {
+  // 0-1 случайное число, затем получаем например 0-99, и прибавляем минимум
+  const retValue = Math.floor((Math.random() * maxRandom) + minRandom);
+  return retValue;
 };
 
 export const euclideanAlgorithm = (a, b) => {

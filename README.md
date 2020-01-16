@@ -10,3 +10,4 @@ Frontend PROJECT
 [![asciicast](https://asciinema.org/a/JiABNBbHAnWv0eZfWTYHrkvaJ.svg)](https://asciinema.org/a/JiABNBbHAnWv0eZfWTYHrkvaJ)
 Игра "НОД"
 [![asciicast](https://asciinema.org/a/CW5B0SnOiqfZvejut0fd8TU9O.svg)](https://asciinema.org/a/CW5B0SnOiqfZvejut0fd8TU9O)
+Игра "Арифметическая прогрессия"
