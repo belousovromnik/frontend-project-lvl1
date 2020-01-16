@@ -34,7 +34,7 @@
     "dist"
   ],
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-even": "dist/bin/brain-even.js"
   },
   "dependencies": {
     "babel-eslint": "^10.0.3",
