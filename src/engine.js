@@ -1,5 +1,21 @@
 import readlineSync from 'readline-sync';
 
+export const isPrime = (number) => {
+  if ([1, 2].indexOf(number) > -1) {
+    return true;
+  }
+  if (number % 2 === 0) {
+    return false;
+  }
+  const sqrtNumber = Math.floor(Math.sqrt(number));
+  for (let i = 3; i <= sqrtNumber; i += 2) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
 export const getRandomInt = (minRandom = 1, maxRandom = 100) => {
   // 0-1 случайное число, затем получаем например 0-99, и прибавляем минимум
   const retValue = Math.floor((Math.random() * maxRandom) + minRandom);

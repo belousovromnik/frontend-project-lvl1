@@ -18,11 +18,12 @@ export const mainAction = () => {
   let correctAns = 0;
 
   for (let item = 1; item < progressionLength + 1; item += 1) {
+    const itemNumber = firstNum + rowIterationSize * item;
     if (item === hiddenItemNumber) {
       progression.push('..');
-      correctAns = firstNum + rowIterationSize * item;
+      correctAns = itemNumber;
     } else {
-      progression.push(String(firstNum + rowIterationSize * item));
+      progression.push(String(itemNumber));
     }
   }
 

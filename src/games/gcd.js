@@ -12,9 +12,7 @@ export const mainAction = () => {
   const firstNum = getRandomInt();
   const secondNum = getRandomInt();
 
-  const minNum = firstNum < secondNum ? firstNum : secondNum;
-  const maxNum = minNum === firstNum ? secondNum : firstNum;
-  const correctAns = String(euclideanAlgorithm(minNum, maxNum));
+  const correctAns = String(euclideanAlgorithm(firstNum, secondNum));
 
   const strToQuestion = `${firstNum} ${secondNum}`;
 

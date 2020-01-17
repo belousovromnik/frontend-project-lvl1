@@ -11,3 +11,6 @@ Frontend PROJECT
 Игра "НОД"
 [![asciicast](https://asciinema.org/a/CW5B0SnOiqfZvejut0fd8TU9O.svg)](https://asciinema.org/a/CW5B0SnOiqfZvejut0fd8TU9O)
 Игра "Арифметическая прогрессия"
+[![asciicast](https://asciinema.org/a/23IwEnvxyVGrY0D8Kl7z6yMpv.svg)](https://asciinema.org/a/23IwEnvxyVGrY0D8Kl7z6yMpv)
+Игра "Простое ли число?"
+[![asciicast](https://asciinema.org/a/lmnZyEBTM1hQhkgBIIFmtDvu6.svg)](https://asciinema.org/a/lmnZyEBTM1hQhkgBIIFmtDvu6)
