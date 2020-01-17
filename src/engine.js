@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 
 export const isPrime = (number) => {
-  if ([1, 2].indexOf(number) > -1) {
+  if (number === 2) {
     return true;
   }
-  if (number % 2 === 0) {
+  if (number < 2 || number % 2 === 0) {
     return false;
   }
   const sqrtNumber = Math.floor(Math.sqrt(number));
