@@ -1,5 +1,3 @@
-import { getRandomInt } from '../engine';
-
 export function greeting() {
   return 'What number is missing in the progression?';
 }
@@ -8,10 +6,10 @@ export const mainAction = () => {
   // длина ряда
   const progressionLength = 10;
   // номер скрытой позиции
-  const hiddenItemNumber = getRandomInt(1, progressionLength);
+  const hiddenItemNumber = Math.floor((Math.random() * progressionLength) + 1);
   // величина итерации данного ряда
-  const rowIterationSize = getRandomInt(1, progressionLength);
-  const firstNum = getRandomInt();
+  const rowIterationSize = Math.floor((Math.random() * progressionLength) + 1);
+  const firstNum = Math.floor((Math.random() * 100) + 1);
   // прогрессия
   const progression = [String(firstNum)];
 
