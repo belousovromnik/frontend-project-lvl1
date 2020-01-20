@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import run from '../engine';
-import { greeting, mainAction } from '../games/gcd';
+import { GREETING, mainAction } from '../games/gcd';
 
-run(greeting, mainAction);
+run(GREETING, mainAction);

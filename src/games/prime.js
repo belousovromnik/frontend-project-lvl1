@@ -14,9 +14,7 @@ const isPrime = (number) => {
   return true;
 };
 
-export function greeting() {
-  return 'Answer "yes" if given number is prime. Otherwise answer "no".';
-}
+export const GREETING = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export const mainAction = () => {
   const question = Math.floor((Math.random() * 100) + 1);
@@ -29,4 +27,3 @@ export const mainAction = () => {
 
   return [strToQuestion, correctAns];
 };
-

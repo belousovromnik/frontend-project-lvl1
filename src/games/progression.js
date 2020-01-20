@@ -1,6 +1,4 @@
-export function greeting() {
-  return 'What number is missing in the progression?';
-}
+export const GREETING = 'What number is missing in the progression?';
 
 export const mainAction = () => {
   // длина ряда

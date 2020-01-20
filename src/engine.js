@@ -5,7 +5,7 @@ export default function run(greeting, mainAction) {
   const QUESTION_NUMBER = 3;
 
   console.log('Welcome to the Brain Games!');
-  console.log(greeting());
+  console.log(greeting);
 
   const nameUser = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${nameUser}!`);

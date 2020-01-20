@@ -7,9 +7,7 @@ const euclideanAlgorithm = (a, b) => {
   return euclideanAlgorithm(b, remainderOfDivision);
 };
 
-export function greeting() {
-  return 'Find the greatest common divisor of given numbers.';
-}
+export const GREETING = 'Find the greatest common divisor of given numbers.';
 
 export const mainAction = () => {
   const firstNum = Math.floor((Math.random() * 100) + 1);

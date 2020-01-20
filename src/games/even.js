@@ -1,6 +1,4 @@
-export function greeting() {
-  return 'Answer "yes" if the number is even, otherwise answer "no".';
-}
+export const GREETING = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 export const mainAction = () => {
   const question = Math.floor((Math.random() * 100) + 1);

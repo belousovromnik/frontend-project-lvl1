@@ -9,10 +9,7 @@ const operatorDict = {
   '*': mul,
 };
 
-export function greeting() {
-  return 'What is the result of the expression?';
-}
-
+export const GREETING = 'What is the result of the expression?';
 
 export const mainAction = () => {
   const firstNum = Math.floor((Math.random() * 100) + 1);
