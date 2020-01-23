@@ -1,3 +1,6 @@
+import run from '../engine';
+import randomCount from '../sec_functions';
+
 const isPrime = (number) => {
   if (number === 2) {
     return true;
@@ -16,14 +19,15 @@ const isPrime = (number) => {
 
 export const GREETING = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export const mainAction = () => {
-  const question = Math.floor((Math.random() * 100) + 1);
+export const logicGame = () => {
+  const question = randomCount();
   const strToQuestion = String(question);
 
-  let correctAns = 'no';
-  if (isPrime(question)) {
-    correctAns = 'yes';
-  }
+  const correctAns = isPrime(question) ? 'yes' : 'no';
 
   return [strToQuestion, correctAns];
+};
+
+export const mainAction = () => {
+  run(GREETING, logicGame);
 };

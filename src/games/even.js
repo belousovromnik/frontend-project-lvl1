@@ -1,14 +1,19 @@
+import run from '../engine';
+import randomCount from '../sec_functions';
+
 export const GREETING = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-export const mainAction = () => {
-  const question = Math.floor((Math.random() * 100) + 1);
+const isEven = (number) => !(number % 2);
 
-  let correctAns = 'no';
-  if (question % 2 === 0) {
-    correctAns = 'yes';
-  }
+export const logicGame = () => {
+  const question = randomCount();
 
+  const correctAns = isEven(question) ? 'yes' : 'no';
   const strToQuestion = String(question);
 
   return [strToQuestion, correctAns];
+};
+
+export const mainAction = () => {
+  run(GREETING, logicGame);
 };

@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import run from '../engine';
-import { GREETING, mainAction } from '../games/calc';
+import { mainAction } from '../games/calc';
 
-run(GREETING, mainAction);
+mainAction();

@@ -1,13 +1,16 @@
+import run from '../engine';
+import randomCount from '../sec_functions';
+
 export const GREETING = 'What number is missing in the progression?';
 
-export const mainAction = () => {
+export const logicGame = () => {
   // длина ряда
   const progressionLength = 10;
   // номер скрытой позиции
-  const hiddenItemNumber = Math.floor((Math.random() * progressionLength) + 1);
+  const hiddenItemNumber = randomCount(1, progressionLength);
   // величина итерации данного ряда
-  const rowIterationSize = Math.floor((Math.random() * progressionLength) + 1);
-  const firstNum = Math.floor((Math.random() * 100) + 1);
+  const rowIterationSize = randomCount(1, progressionLength);
+  const firstNum = randomCount();
   // прогрессия
   const progression = [String(firstNum)];
 
@@ -27,4 +30,8 @@ export const mainAction = () => {
   correctAns = String(correctAns);
 
   return [strToQuestion, correctAns];
+};
+
+export const mainAction = () => {
+  run(GREETING, logicGame);
 };

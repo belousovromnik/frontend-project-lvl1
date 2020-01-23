@@ -1,3 +1,6 @@
+import run from '../engine';
+import randomCount from '../sec_functions';
+
 const euclideanAlgorithm = (a, b) => {
   // остаток от деления
   const remainderOfDivision = a % b;
@@ -9,13 +12,17 @@ const euclideanAlgorithm = (a, b) => {
 
 export const GREETING = 'Find the greatest common divisor of given numbers.';
 
-export const mainAction = () => {
-  const firstNum = Math.floor((Math.random() * 100) + 1);
-  const secondNum = Math.floor((Math.random() * 100) + 1);
+export const logicGame = () => {
+  const firstNum = randomCount();
+  const secondNum = randomCount();
 
   const correctAns = String(euclideanAlgorithm(firstNum, secondNum));
 
   const strToQuestion = `${firstNum} ${secondNum}`;
 
   return [strToQuestion, correctAns];
+};
+
+export const mainAction = () => {
+  run(GREETING, logicGame);
 };
