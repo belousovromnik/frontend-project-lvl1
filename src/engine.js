@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 
-export default function run(greeting, mainAction) {
+export default function runEngine(greeting, mainAction) {
   const QUESTION_NUMBER = 3;
 
   console.log('Welcome to the Brain Games!');

@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { mainAction } from '../games/gcd';
+import runGame from '../games/gcd';
 
-mainAction();
+runGame();
