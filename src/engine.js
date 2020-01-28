@@ -3,7 +3,6 @@ import readlineSync from 'readline-sync';
 const numberQuestions = 3;
 
 export default function runEngine(greeting, getLogicGame) {
-
   console.log('Welcome to the Brain Games!');
   console.log(greeting);
 
