@@ -3,6 +3,7 @@ Frontend PROJECT
 Наименование пакета belousovromnik-frontend-project-lvl1
 Установка npm install belousovromnik-frontend-project-lvl1
 Удаление npm uninstall belousovromnik-frontend-project-lvl1
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/071147a91e8e75a1fe55/maintainability)](https://codeclimate.com/github/belousovromnik/frontend-project-lvl1/maintainability)   [![Build Status](https://travis-ci.org/belousovromnik/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/belousovromnik/frontend-project-lvl1)
 
 Установка
