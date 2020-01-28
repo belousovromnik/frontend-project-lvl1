@@ -1,5 +1,5 @@
 import runEngine from '../engine';
-import randomCount from '../sec_functions';
+import getRandomCount from '../secFunctions';
 
 const isPrime = (number) => {
   if (number === 2) {
@@ -19,18 +19,14 @@ const isPrime = (number) => {
 
 const GREETING = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const logicGame = () => {
-  const question = randomCount();
-
-  // верный ответ
+const getLogicGame = () => {
+  const question = getRandomCount();
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
-  // строка пользователю с вопросом
-  const userQuestionString = String(question);
 
-  return [userQuestionString, correctAnswer];
+  return [String(question), correctAnswer];
 };
 
 const runGame = () => {
-  runEngine(GREETING, logicGame);
+  runEngine(GREETING, getLogicGame);
 };
 export default runGame;

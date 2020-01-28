@@ -1,8 +1,8 @@
 import _ from 'lodash.sample';
 import runEngine from '../engine';
-import randomCount from '../sec_functions';
+import getRandomCount from '../secFunctions';
 
-const operators = {
+const operations = {
   '+': (a, b) => a + b,
   '-': (a, b) => a - b,
   '*': (a, b) => a * b,
@@ -10,20 +10,22 @@ const operators = {
 
 const GREETING = 'What is the result of the expression?';
 
-const logicGame = () => {
-  const firstNum = randomCount();
-  const secondNum = randomCount();
-  const indexOperators = _(Object.keys(operators));
+const getLogicGame = () => {
+  const firstNum = getRandomCount();
+  const secondNum = getRandomCount();
+  const operators = _(Object.keys(operations));
 
-  // верный ответ
-  const correctAnswer = String(operators[indexOperators](firstNum, secondNum));
+  const correctAnswer = String(operations[operators](firstNum, secondNum));
   // строка пользователю с вопросом
-  const userQuestionString = `${firstNum} ${indexOperators} ${secondNum}`;
+  // это не венгерская нотация, это просто перевод с русского на английский
+  // фраза - строка вопроса пользователю - userQuestionString
+  // не согласен с этим замечанием, переименую, но не согласен
+  const question = `${firstNum} ${operators} ${secondNum}`;
 
-  return [userQuestionString, correctAnswer];
+  return [question, correctAnswer];
 };
 
 const runGame = () => {
-  runEngine(GREETING, logicGame);
+  runEngine(GREETING, getLogicGame);
 };
 export default runGame;

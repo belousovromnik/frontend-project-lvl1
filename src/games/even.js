@@ -1,21 +1,18 @@
 import runEngine from '../engine';
-import randomCount from '../sec_functions';
+import getRandomCount from '../secFunctions';
 
 const GREETING = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => !(number % 2);
 
-const logicGame = () => {
-  const question = randomCount();
-  // верный ответ
+const getLogicGame = () => {
+  const question = getRandomCount();
   const correctAnswer = isEven(question) ? 'yes' : 'no';
-  // строка пользователю с вопросом
-  const userQuestionString = String(question);
 
-  return [userQuestionString, correctAnswer];
+  return [String(question), correctAnswer];
 };
 
 const runGame = () => {
-  runEngine(GREETING, logicGame);
+  runEngine(GREETING, getLogicGame);
 };
 export default runGame;

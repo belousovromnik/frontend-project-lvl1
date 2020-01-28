@@ -1,30 +1,32 @@
 import runEngine from '../engine';
-import randomCount from '../sec_functions';
+import getRandomCount from '../secFunctions';
 
-const euclideanAlgorithm = (a, b) => {
+const findGcd = (a, b) => {
   // остаток от деления
   const remainderOfDivision = a % b;
   if (remainderOfDivision === 0) {
     return b;
   }
-  return euclideanAlgorithm(b, remainderOfDivision);
+  return findGcd(b, remainderOfDivision);
 };
 
 const GREETING = 'Find the greatest common divisor of given numbers.';
 
-const logicGame = () => {
-  const firstNum = randomCount();
-  const secondNum = randomCount();
+const getLogicGame = () => {
+  const firstNum = getRandomCount();
+  const secondNum = getRandomCount();
 
-  // верный ответ
-  const correctAnswer = String(euclideanAlgorithm(firstNum, secondNum));
+  const correctAnswer = String(findGcd(firstNum, secondNum));
   // строка пользователю с вопросом
-  const userQuestionString = `${firstNum} ${secondNum}`;
+  // это не венгерская нотация, это просто перевод с русского на английский
+  // фраза - строка вопроса пользователю - userQuestionString
+  // не согласен с этим замечанием, переименую, но не согласен
+  const question = `${firstNum} ${secondNum}`;
 
-  return [userQuestionString, correctAnswer];
+  return [question, correctAnswer];
 };
 
 const runGame = () => {
-  runEngine(GREETING, logicGame);
+  runEngine(GREETING, getLogicGame);
 };
 export default runGame;
